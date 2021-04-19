@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import datetime
 
 import tweepy
 
@@ -32,6 +33,12 @@ def autofav():
             except Exception as e:
                 print(e)
 
-
 if __name__ == "__main__":
     autofav()
+
+f = open("log.txt", "a")
+
+time = datetime.datetime.now()
+f.write(time)
+
+f.close()
