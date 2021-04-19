@@ -39,6 +39,6 @@ if __name__ == "__main__":
 f = open("log.txt", "a")
 
 time = datetime.datetime.now()
-f.write(time)
+f.write(str(time))
 
 f.close()
