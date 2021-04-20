@@ -35,10 +35,3 @@ def autofav():
 
 if __name__ == "__main__":
     autofav()
-
-f = open("log.txt", "a")
-
-time = datetime.datetime.now()
-f.write(str(time))
-
-f.close()
